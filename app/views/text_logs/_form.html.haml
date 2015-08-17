@@ -1,0 +1,31 @@
+= form_for(@text_log) do |f|
+  - if @text_log.errors.any?
+    %div#error_explanation
+      %h2= "#{pluralize(@text_log.errors.count, "error")} prohibited this text_log from being saved:"
+
+      %ul
+        - @text_log.errors.full_messages.each do |message|
+          %li= message
+
+  = f.label 'First Name:'
+  = f.text_field :first_name
+  %br
+  = f.label 'Last Name:'
+  = f.text_field :last_name
+  %br
+  = f.label 'Phone Number:'
+  = f.text_field :phone_number
+  %br
+  = f.label 'Prefer text messages'
+  %br
+  = f.label 'Yes'
+  = f.radio_button :text_preference, true
+  = f.label 'No'
+  = f.radio_button :text_preference, false
+  %br
+  = f.label 'Notes:'
+  %br
+  = f.text_area :notes
+
+  %div.actions
+    = f.submit

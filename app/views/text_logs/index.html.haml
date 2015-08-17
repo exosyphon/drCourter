@@ -1,0 +1,40 @@
+%h1 Patient Contact Preferences:
+
+%table
+  %thead
+    %tr
+      %th(style="padding-left: 8px")
+        First Name
+      %th(style="padding-left: 8px")
+        Last Name
+      %th(style="padding-left: 8px")
+        Phone Number
+      %th(style="padding-left: 8px")
+        Text?
+      %th(style="padding-left: 8px")
+        Notes
+      %th(style="padding-left: 8px")
+  %tbody
+    - @text_logs.each do |log|
+      %tr
+        %td(style="padding-left: 8px; text-align: center")
+          = log.first_name
+        %td(style="padding-left: 8px; text-align: center")
+          = log.last_name
+        %td(style="padding-left: 8px; text-align: center")
+          = log.phone_number
+        %td(style="padding-left: 8px; text-align: center")
+          = log.text_preference
+        %td(style="padding-left: 8px; text-align: center")
+          = log.notes
+        %td(style="padding-left: 8px; text-align: center")
+          = link_to 'Edit', edit_text_log_path(log)
+        %td(style="padding-left: 8px; text-align: center")
+          = link_to 'Destroy', log, method: :delete, data: { confirm: 'Are you sure?' }
+        - if log.text_preference
+          %td(style="padding-left: 8px; text-align: center")
+            = link_to 'Send Text', log
+
+%br
+
+= link_to 'New Record', new_text_log_path
