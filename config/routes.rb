@@ -9,7 +9,6 @@ Rails.application.routes.draw do
   get '/patient_resources/new_patient_forms', to: 'patient_resources#new_patient_forms'
   get '/contact_us', to: 'contact_us#index'
   get '/services', to: 'services#index'
-  get '/our_technology', to: 'our_technology#index'
 
   root 'home#index'
 end
