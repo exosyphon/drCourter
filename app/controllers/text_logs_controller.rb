@@ -52,8 +52,7 @@ class TextLogsController < ApplicationController
   def send_text
     @text_log = TextLog.find(params[:text_log_id])
 
-    easy = SMSEasy::Client.new
-    easy.deliver(@text_log.phone_number, "at&t", params[:text_message_body])
+    SmsMailer.send_sms(@text_log.phone_number, params[:text_message_body]).deliver
     respond_to do |format|
       format.html { redirect_to text_logs_path, notice: 'Text message was successfully sent.' }
     end
