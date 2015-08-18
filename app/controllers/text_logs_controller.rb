@@ -52,7 +52,7 @@ class TextLogsController < ApplicationController
   def send_text
     @text_log = TextLog.find(params[:text_log_id])
 
-    SmsMailer.send_sms(@text_log.phone_number, params[:text_message_body]).deliver
+    SmsMailer.send_sms(@text_log.phone_number, params[:text_message_body]).deliver_now
     respond_to do |format|
       format.html { redirect_to text_logs_path, notice: 'Text message was successfully sent.' }
     end
