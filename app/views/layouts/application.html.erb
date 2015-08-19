@@ -57,23 +57,9 @@
           <a id="dLabel" role="button" data-toggle="dropdown">Patient Resources<span class="caret"></span></a>
             <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
             <%= menu_item "New Patient Forms", patient_resources_new_patient_forms_path %>
-            <li><a href="#">Some other action</a></li>
-            <li class="divider"></li>
-            <li class="dropdown-submenu">
-              <a tabindex="-1" href="#">Hover me for more options</a>
-              <ul class="dropdown-menu">
-                <li><a tabindex="-1" href="#">Second level</a></li>
-                <li class="dropdown-submenu">
-                  <a href="#">Even More..</a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">3rd level</a></li>
-                    <li><a href="#">3rd level</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Second level</a></li>
-                <li><a href="#">Second level</a></li>
-              </ul>
-            </li>
+            <%= menu_item "Q & A", patient_resources_q_a_path %>
+            <%= menu_item "Post-Op Instructions", patient_resources_post_op_instructions_path %>
+            <%= menu_item "Surgical Instructions", patient_resources_surgical_instructions_path %>
           </ul>
           </li>
           <%= menu_item "About Us", about_us_path %>
