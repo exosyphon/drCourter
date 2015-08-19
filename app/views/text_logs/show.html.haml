@@ -1,5 +1,7 @@
 %p#notice= notice
 
+%h1 Send Text Message
+
 %label First Name:
 %div= @text_log.first_name
 %label Last Name:
@@ -15,6 +17,6 @@
     = submit_tag("Send Text")
 %br
 %br
-= link_to 'Edit', edit_text_log_path(@text_log)
-|
-= link_to 'Back', text_logs_path
+= button_to 'Edit', edit_text_log_path(@text_log), method: :get
+%br
+= button_to 'Back', text_logs_path, method: :get
