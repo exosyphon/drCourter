@@ -54,13 +54,13 @@
         <%= menu_group do %>
           <%= menu_item "Our Practice", our_practice_path %>
           <li class="dropdown">
-          <a id="dLabel" role="button" data-toggle="dropdown">Patient Resources<span class="caret"></span></a>
+            <a id="dLabel" role="button" data-toggle="dropdown">Patient Resources<span class="caret"></span></a>
             <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
-            <%= menu_item "New Patient Forms", patient_resources_new_patient_forms_path %>
-            <%= menu_item "Q & A", patient_resources_q_a_path %>
-            <%= menu_item "Post-Op Instructions", patient_resources_post_op_instructions_path %>
-            <%= menu_item "Surgical Instructions", patient_resources_surgical_instructions_path %>
-          </ul>
+              <%= menu_item "New Patient Forms", patient_resources_new_patient_forms_path %>
+              <%= menu_item "Q & A", patient_resources_q_a_path %>
+              <%= menu_item "Post-Op Instructions", patient_resources_post_op_instructions_path %>
+              <%= menu_item "Surgical Instructions", patient_resources_surgical_instructions_path %>
+            </ul>
           </li>
           <%= menu_item "About Us", about_us_path %>
           <%= menu_item "Contact Us", contact_us_path %>
@@ -71,25 +71,15 @@
   </div>
 </div>
 
+<%= yield :devise_extras %>
+
 <div class="container">
   <div class="row">
     <div class="col-lg-9">
       <%= bootstrap_flash %>
       <%= yield %>
     </div>
-    <!--<div class="col-lg-3">-->
-    <!--<div class="well sidebar-nav">-->
-    <!--<h3>Sidebar</h3>-->
-    <!--<ul class="nav nav-list">-->
-    <!--<li class="nav-header">Sidebar</li>-->
-    <!--<li><%= link_to "Link1", "/path1" %></li>-->
-    <!--<li><%= link_to "Link2", "/path2" %></li>-->
-    <!--<li><%= link_to "Link3", "/path3" %></li>-->
-    <!--</ul>-->
-    <!--</div>&lt;!&ndash;/.well &ndash;&gt;-->
-    <!--</div>&lt;!&ndash;/span&ndash;&gt;-->
   </div>
-  <!--/row-->
 
   <footer style="margin-top: 50px;">
     <p>Proudly serving: Midland, Odessa, TX, Stanton, TX</p>
@@ -98,7 +88,6 @@
   </footer>
 
 </div>
-<!-- /container -->
 
 </body>
 </html>

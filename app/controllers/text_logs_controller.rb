@@ -1,4 +1,5 @@
 class TextLogsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_text_log, only: [:show, :edit, :update, :destroy]
 
   def index

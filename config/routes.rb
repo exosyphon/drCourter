@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users#, path_names: {sign_up: ''}
   resources :text_logs do
     post '/send_text', to: 'text_logs#send_text'
   end
