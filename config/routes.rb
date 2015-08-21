@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   devise_for :users#, path_names: {sign_up: ''}
   resources :text_logs do
     post '/send_text', to: 'text_logs#send_text'
+    get '/view_audits', to: 'text_logs#view_audits', on: :collection
   end
 
   get '/our_practice', to: 'our_practice#index'

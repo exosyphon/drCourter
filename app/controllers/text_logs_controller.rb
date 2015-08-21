@@ -65,11 +65,15 @@ class TextLogsController < ApplicationController
     end
   end
 
-  def create_audit_record(phone_number, message)
-    SentText.create(phone_number: phone_number, message: message)
+  def view_audits
+    @sent_texts = SentText.all
   end
 
   private
+
+  def create_audit_record(phone_number, message)
+    SentText.create(phone_number: phone_number, message: message)
+  end
 
   def set_text_log
     @text_log = TextLog.find(params[:id])

@@ -1,0 +1,22 @@
+%h1 Sent Text Messages:
+
+%table
+  %thead
+    %tr
+      %th(style="padding-left: 8px")
+        Phone Number
+      %th(style="padding-left: 8px")
+        Message
+      %th(style="padding-left: 8px")
+        Time Sent
+  %tbody
+    - @sent_texts.each do |msg|
+      %tr
+        %td(style="padding-left: 8px; text-align: center")
+          = msg.phone_number
+        %td(style="padding-left: 8px; text-align: center")
+          = msg.message
+        %td(style="padding-left: 8px; text-align: center")
+          = msg.created_at
+
+= button_to 'Back', text_logs_path, method: :get
