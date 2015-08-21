@@ -3,6 +3,9 @@ development:
   database: drcourter
   host: localhost
   port: 5432
+test:
+  adapter: postgresql
+  database: drcourter_test
 production:
   adapter: postgresql
   database: drcourter
