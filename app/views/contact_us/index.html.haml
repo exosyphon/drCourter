@@ -5,3 +5,6 @@
 %h5 Address:
 %p 4305 North Garfield Street Suite 221
 %p Midland, TX 79705
+
+%div
+  %iframe{:allowfullscreen => "", :frameborder => "0", :height => "300px", :src => "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d845.5847875561603!2d-102.11282480000001!3d32.03301030000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86fbd8d9e5390c09%3A0xc5215eaa7da52c87!2s4305+N+Garfield+St%2C+Midland%2C+TX+79705!5e0!3m2!1sen!2sus!4v1439867635221", :style => "border:0;margin: 25px", :width => "300px"}tLng(31.9973456,-102.07791459999999),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(31.9973456, -102.07791459999999)});infowindow = new google.maps.InfoWindow({content:"4305 North Garfield Street Midland" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
