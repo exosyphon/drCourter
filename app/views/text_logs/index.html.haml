@@ -24,7 +24,10 @@
         %td(style="padding-left: 8px; text-align: center")
           = log.phone_number
         %td(style="padding-left: 8px; text-align: center")
-          = log.text_preference
+          - if log.text_preference
+            Yes
+          - else
+            No
         %td(style="padding-left: 8px; text-align: center")
           = log.notes
         %td(style="padding-left: 8px; text-align: center")
