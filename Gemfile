@@ -13,7 +13,6 @@ gem 'devise', '3.5.2'
 gem 'unicorn', '4.9.0'
 gem 'haml', '4.0.7'
 gem 'twitter-bootstrap-rails', '3.2.0'
-gem 'less-rails', '2.7.0'
 
 group :development, :test do
   gem 'rspec-rails', '3.3.3'
