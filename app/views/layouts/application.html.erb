@@ -49,11 +49,10 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="/">Home</a>
-
     <div class="navbar-collapse collapse navbar-responsive-collapse">
       <ul class="nav navbar-nav">
         <%= menu_group do %>
+          <%= menu_item "Home", href="/" %>
           <%= menu_item "Our Practice", our_practice_path %>
           <li class="dropdown">
             <a id="dLabel" role="button" data-toggle="dropdown">Patient Resources<span class="caret"></span></a>
