@@ -15,5 +15,8 @@ Rails.application.routes.draw do
   get '/contact_us', to: 'contact_us#index'
   get '/services', to: 'services#index'
 
+  get '/patient_resources/new_patient_forms/download_patient_information', to: 'patient_resources#download_patient_information'
+  get '/patient_resources/new_patient_forms/download_patient_medical_history', to: 'patient_resources#download_patient_medical_history'
+
   root 'home#index'
 end
