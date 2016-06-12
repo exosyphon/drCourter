@@ -1,11 +1,12 @@
-%div
-  = image_tag "smiling_woman.png", {width: 380, height: 305, :style => 'border: 2px solid black; float: left;margin: 0 20px 20px 0'}
+%div(style="float: left")
+  = image_tag "smiling_woman.png", {width: 350, height: 325, :style => 'border: 2px solid black; margin: 0 20px 20px 0'}
 
-  %h2(style="text-align: center;font-style: italic;") If you're ready for that beautiful smile |
+%div(style="min-width:200px;overflow: auto")
+  %h2(style="text-align: center;font-style: italic;") If you're ready for that beautiful smile
   %h2(style="text-align: center;font-style: italic;") you have always wanted, we can help!
   %h2(style="text-align: center;font-style: italic;") Friendly Staff.  Beautiful Smiles.  Caring Environment.
 
-%div(style="overflow: auto")
+%div(style="min-width:200px;overflow: auto")
   %p Thanks for visiting our website. If you are looking for quality dental care and a caring environment, call our office today. We take great satisfaction in helping people from all walks of life achieve and maintain optimal oral health and beautiful smiles.
   Throughout our website, you will find information about our practice, procedures we provide, and dentistry in general. Please explore and learn as much about dentistry and our services as you desire. We believe our patients should have as much information as possible in order to make important, informed decisions regarding their oral health and treatment options.
   Our patients are our most important asset, and we strive to develop long-lasting, trusting relationships with all of our patients. Most of our new patients are referred by our fantastic family of existing patients. We welcome the opportunity to meet you to discuss your dental needs and see if we can help you achieve that beautiful smile you have always wanted.
@@ -43,7 +44,7 @@
           %td(style="font-size: 12px") 432-682-0786
 
 %div
-  %iframe{:allowfullscreen => "", :frameborder => "0", :height => "400px", :src => "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d845.5847875561603!2d-102.11282480000001!3d32.03301030000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86fbd8d9e5390c09%3A0xc5215eaa7da52c87!2s4305+N+Garfield+St%2C+Midland%2C+TX+79705!5e0!3m2!1sen!2sus!4v1439867635221", :style => "border:0;margin: 25px", :width => "400px"}tLng(31.9973456,-102.07791459999999),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(31.9973456, -102.07791459999999)});infowindow = new google.maps.InfoWindow({content:"4305 North Garfield Street Midland" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+  %iframe{:allowfullscreen => "", :frameborder => "0", :height => "300px", :src => "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d845.5847875561603!2d-102.11282480000001!3d32.03301030000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86fbd8d9e5390c09%3A0xc5215eaa7da52c87!2s4305+N+Garfield+St%2C+Midland%2C+TX+79705!5e0!3m2!1sen!2sus!4v1439867635221", :style => "border:0;margin: 25px", :width => "300px"}tLng(31.9973456,-102.07791459999999),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(31.9973456, -102.07791459999999)});infowindow = new google.maps.InfoWindow({content:"4305 North Garfield Street Midland" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
 
 %div(style="margin-top: 50px;text-align: center;")
   = image_tag "aacd.jpg", {width: 275, height: 64}
