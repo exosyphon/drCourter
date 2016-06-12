@@ -61,3 +61,7 @@
 .nav-container {
     margin-left: 25%;
 }
+
+.services-wrapper {
+    display: inline-block;
+}
