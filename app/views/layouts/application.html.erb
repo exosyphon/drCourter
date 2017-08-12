@@ -71,8 +71,13 @@
           </li>
           <%= menu_item "About Us", about_us_path %>
           <%= menu_item "Contact Us", contact_us_path %>
-          <%= menu_item "Services", services_path %>
-        <% end %>
+          <li class="dropdown">
+            <a id="dLabel" role="button" data-toggle="dropdown">Services<span class="caret"></span></a>
+            <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+              <%= menu_item "Cosmetic Dentistry", services_cosmetic_dentistry_path %>
+            </ul>
+          </li>
+      <% end %>
       </ul>
     </div>
   </div>

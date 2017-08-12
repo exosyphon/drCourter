@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   get '/patient_resources/post_op_instructions', to: 'patient_resources#post_op_instructions'
   get '/patient_resources/surgical_instructions', to: 'patient_resources#surgical_instructions'
   get '/contact_us', to: 'contact_us#index'
-  get '/services', to: 'services#index'
+  get '/services/cosmetic_dentistry', to: 'services#cosmetic_dentistry'
 
   get '/patient_resources/new_patient_forms/download_patient_information', to: 'patient_resources#download_patient_information'
   get '/patient_resources/new_patient_forms/download_patient_medical_history', to: 'patient_resources#download_patient_medical_history'
