@@ -1,2 +1,2 @@
-class SentText < ActiveRecord::Base
+class SentText < ApplicationRecord
 end

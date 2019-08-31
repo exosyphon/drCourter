@@ -1,4 +1,4 @@
-class CreateTextLogs < ActiveRecord::Migration
+class CreateTextLogs < ActiveRecord::Migration[4.2]
   def change
     create_table :text_logs do |t|
       t.string :first_name
